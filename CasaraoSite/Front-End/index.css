@@ -1,0 +1,393 @@
+/*Estilização de todo o corpo do site e gerais.*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color-black-heavy);
+}
+
+/*Estilização de cores por variaveis para facilidade na mudança das cores*/
+:root {
+    --color-background: #fffdf7;
+    --color-black: #212121;
+    --color-text: #d6d6d6;
+    --color-text-out: #90908e;
+    --color-primary: #ffbf00: 
+    --color-none: #qqqqqq; /*Linha bugada*/
+    --color-black-heavy: #000000;
+    --color-secondary: #a39432;
+    --color-three: #f5cb4d6d;
+    --color-white: #ffffff;
+    --color-red: #e74c3c;
+    --color-green: #2ecc71;
+    --color-separate: #cccccc;
+
+
+}
+
+h1 {
+    color: var(--color-white);
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+.container {
+    width: 100rem;
+    height: 600px;
+}
+
+.text-color {
+    color: var(--color-text);
+}
+
+/*Estilização barra de navegação.*/
+.button-header {
+    height: 40px;
+    width: 280px;
+    border: none;
+    background-color: rgb(9, 9, 9);
+    color:  var(--color-text);
+    border-radius: 0 10px 0 10px;
+    cursor: pointer;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.3);
+    border: 1px solid var(--color-white);
+    margin-right: 50px;
+    font-size: 22px;
+}
+
+.button-header:hover {
+    background-color: var(--color-secondary);
+    border: none;
+}
+
+.navegacao-index {
+    font-size: 30px;
+}
+
+a {
+    font-size: 16px;
+    margin-left: 20px;
+    color: aliceblue;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #7f7740;
+}
+
+.header {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+.header .section {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;    
+}
+
+/*Estilização das ondas em transição*/
+#secaoWaves {
+    width: 100%;
+    height: 850px;
+    overflow: hidden;
+}
+
+section .wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-image: url(../IMG/wave\ \(3\).png);
+    background-size: 1500px 100px;
+}
+
+
+section .wave.wave1 {
+    animation: animated 40s linear infinite;
+    z-index: 1000;
+    opacity: 1;
+    animation-delay: 0s;
+    bottom: 0;
+}
+
+@keyframes animated {
+    0% {
+        background-position-x: 0;
+    }
+
+    100% {
+        background-position-x: 1000px;
+    }
+}
+
+section .wave.wave2 {
+    animation: animated2 35s linear infinite;
+    z-index: 999;
+    opacity: 0.5;
+    animation-delay: -5s;
+    bottom: 10px;
+}
+
+@keyframes animated2 {
+    0% {
+        background-position-x: 0;
+    }
+
+    100% {
+        background-position-x: 1000px;
+    }
+}
+
+section .wave.wave3 {
+    animation: animated3 25s linear infinite;
+    z-index: 998;
+    opacity: 0.3;
+    animation-delay: -2s;
+    bottom: 15px;
+}
+
+@keyframes animated3 {
+    0% {
+        background-position-x: 0;
+    }
+
+    100% {
+        background-position-x: 1000px;
+    }
+}
+
+section .wave.wave4 {
+    animation: animated4 30s linear infinite;
+    z-index: 997;
+    opacity: 0.7;
+    animation-delay: -5s;
+    bottom: 20px;
+}
+
+@keyframes animated4 {
+    0% {
+        background-position-x: 0;
+    }
+
+    100% {
+        background-position-x: 1000px;
+    }
+}
+
+/*Estilização seção sobre nos*/
+#secaoSobreNos {
+    width: 100rem;
+    height: 350px;
+}
+
+/*Estilização seção infraestrutura*/
+.img-carrossel-one {
+    width: 600px;
+}
+
+/*Estilização seção contatos*/
+#secaoContatos {
+    width: 100rem;
+    height: 550px;
+}
+
+.contatos-link {
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+/*Estilização seção Feedbacks*/
+#secaoFeedbacks {
+    height: 1480px;
+}
+#inputFeedback {
+    height: 80px;
+}
+#botaoEnviarFeedback {
+    height: 40px;
+    padding: 2px;
+    margin: auto;
+}
+#formFeedback{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/*Estilização Calendario de eventos*/
+/*Não foi iniciado o codigo do calendario, aguardando estilização.*/
+
+/*Estilização seção reserva*/
+#secaoReserva {
+    height: 750px;
+}
+
+.input-name {
+    width: 400px;
+}
+
+.container:last-child {
+    height: 20px;
+}
+
+.button-card {
+    width: 100px;
+    height: 35px;
+    background-color: var(--color-secondary);
+    padding: 5px;
+    margin-left: 0;
+    margin-right: 0;
+    color: var(--color-text);
+    border-radius: 0 10px 0 10px;
+}
+
+.imgs-card {
+    height: 100px;
+}
+
+/*Estilização dos serviços extras e cards.*/
+.title-secao {
+    display: flex;
+    justify-content: center;
+}
+
+.servicos-extras {
+    display: flex !important;
+    justify-content: center !important;
+}
+
+.cards-itens {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.card-1,
+.card-2,
+.card-3,
+.card-4,
+.card-5,
+.card-6 {
+    width: 180px !important;
+    height: 260px !important;
+    margin-right: 30px !important;
+}
+
+.container .totalizador {
+    width: 500px;
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-conc-reserva {
+    color: var(--color-text);
+    background-color: var(--color-secondary);
+}
+
+/*Estilização rodape.*/
+#rodape {
+    height: 100px;
+}
+
+/*Estilização do botão que leva ao topo instantaneamente.*/
+#botaoHome {
+    position: fixed;
+    width: 62px;
+    height: 62px;
+    bottom: 40px;
+    right: 25px;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 25px;
+    box-shadow: 1px 1px 2px var(--color-separate);
+    z-index: 1000;
+}
+#botaoHome:hover {
+    border: 2px solid var(--color-background);
+}
+
+/*Estilização do botão que redireciona diretamente ao suporte no whatsapp.*/
+#botaoWhats {
+    position: fixed;
+    width: 62px!important;
+    height: 62px!important;
+    bottom: 115px;
+    right: 25px;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 35px;
+    box-shadow: 1px 1px 2px var(--color-separate);
+    z-index: 1000;
+}
+#botaoWhats:hover {
+    border: 2px solid var(--color-background);
+}
+
+/*Responsividade*/
+@media screen and (max-width : 900px) {
+
+    .secao-sobre-nos {
+        height: auto;
+    }
+
+    .secao-infraestrutura {
+        height: auto;
+    }
+
+    .secao-contatos {
+        height: auto;
+    }
+
+    .secao-feedbacks {
+        height: auto;
+    }
+
+    .secao-calendario {
+        height: auto;
+    }
+
+    .secao-reserva {
+        height: auto;
+    }
+
+    .secao-rodape {
+        height: auto;
+    }
+}
+
+@media screen and (max-width : 600px) {
+
+    #secaoSobreNos {
+        height: auto;
+    }
+
+    #secaoInfraestrutura {
+        height: auto;
+    }
+
+    #secaoContatos {
+        height: auto;
+    }
+
+    #secaoFeedbacks {
+        height: auto;
+    }
+
+    #secaoCalendario {
+        height: auto;
+    }
+
+    #secaoReserva {
+        height: auto;
+    }
+}

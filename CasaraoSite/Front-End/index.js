@@ -18,7 +18,7 @@ $("#botaoEnviarFeedback").on("click", () => {
             $("#inputEmail").val("");
             $("#inputTelefone").val("");
 
-            $("#modalHeader").children('h5').text("Confirmação de Envio de Dados")
+            $("#modalHeader").children('h5').text("Envio de Dados")
             $("#modalBody").children('p').text("Seus dados foram enviados com sucesso. A equipe responsável fará o contato assim que possível.")
             $("#modalFooter").children('button').removeClass("btn-danger").addClass("btn-success");
             return;
@@ -47,3 +47,5 @@ function inputsSaoValidados(event) {
     $('.needs-validation').removeClass('was-validated');
     return true;
 }
+
+

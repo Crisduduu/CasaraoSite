@@ -29,19 +29,23 @@
 </head>
 
 <body>
+
     <!--Barra de navegação-->
     <header id="navegacao" class="text-center header secao-navegacao">
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#"><img src="../IMG/logo-cazarao-removebg-preview.png" alt=""></a>
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                <a href="#secaoReserva"><button class="btn-outline botao-reserva-oculto"
+                        type="button">Reserva</button></a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"><i class="fas fa-bars" style="color: #ffffff;"></i></span>
                 </button>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
                             <a href="#secaoSobreNos">Sobre Nós</a>
@@ -55,11 +59,8 @@
                         <li class="nav-item">
                             <a href="#secaoFeedbacks">Feedbacks</a>
                         </li>
-                        <li class="nav-item">
-                            <a href="#secaoCalendario">Calendario de Eventos</a>
-                        </li>
                     </ul>
-                    <form class="d-flex" role="search">
+                    <form class="d-flex justify-content-center align-center" role="search">
                         <a href="#secaoReserva"><button class="button-header btn-outline"
                                 type="button">Reserva</button></a>
                     </form>
@@ -67,7 +68,8 @@
             </div>
         </nav>
         <section id="secaoWaves" class="waves-banner">
-            <div class="img-casarao"><img src="../IMG/img-casarão-original-removebg-preview.png" alt=""></div>
+            <div class="img-casarao"><img src="../IMG/img-casarão-original-removebg-preview.png" width="100%" alt="">
+            </div>
             <div class="wave wave1"></div>
             <div class="wave wave2"></div>
             <div class="wave wave3"></div>
@@ -96,9 +98,10 @@
                 <h1 id="infraestrutura">Infraestrutura</h1>
             </div>
             <div class="row">
-                <div class="col-6 text-center mt-3 p-5 infra-class">
-                    <h3 class="text-color mb-3">Nossa infraestrutura é composta por:</h3>
-                    <p class="text-color">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut aspernatur harum
+                <div class="col-6 text-center mt-3 infra-class">
+                    <h3 class="text-color text-center mb-3">Nossa infraestrutura é composta por:</h3>
+                    <p class="text-color text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut
+                        aspernatur harum
                         suscipit iure
                         incidunt
                         in
@@ -108,8 +111,8 @@
                 </div>
 
                 <!--Carrossel-->
-                <div class="col-6 p-5 mt-3">
-                    <div id="carouselExampleFadeOne" class="carousel slide carousel-fade" data-ride="carousel">
+                <div class="col-6 p-5">
+                    <div id="carouselExampleFadeOne" class="carousel carrossel-infra slide carousel-fade" data-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
                                 <img src="../IMG/img-eventos/265407349_938121693778900_6572007911469673084_n.jpg"
@@ -145,7 +148,7 @@
             <div class="col-4 imagem-celular">
                 <img src="../IMG/2451-1024x666-removebg-preview.png" class="h-100">
             </div>
-            <div class="col-8 mt-5 icones-contato">
+            <div class="col-8 icones-contato">
                 <div class="form-group mt-5">
 
                     <p class="text-color">Clique nos icones abaixo e acesse nossas redes
@@ -156,27 +159,53 @@
                     <div class="col-12 mt-5"><a href="" class="contatos-link"><img
                                 src="../mycollection/png/002-facebook.png" alt="">
                         </a>
-                        <a href="" class="contatos-link"><img src="../mycollection/png/001-twitter.png" alt="">
+                        <a href="" class="contatos-link icones-contatos"><img src="../mycollection/png/001-twitter.png"
+                                alt="">
                         </a>
-                        <a href="" class="contatos-link"><img src="../mycollection/png/004-instagram.png" alt="">
+                        <a href="" class="contatos-link icones-contatos"><img
+                                src="../mycollection/png/004-instagram.png" alt="">
                         </a>
-                        <a href="" class="contatos-link"><img src="../mycollection/png/005-linkedin.png" alt="">
+                        <a href="" class="contatos-link icones-contatos"><img src="../mycollection/png/005-linkedin.png"
+                                alt="">
                         </a>
-                        <a href="" class="contatos-link"><img src="../mycollection/png/006-gmail.png" alt="">
+                        <a href="" class="contatos-link icones-contatos"><img src="../mycollection/png/006-gmail.png"
+                                alt="">
                         </a>
-                        <a href="" class="contatos-link"><img src="../mycollection/png/003-whatsapp.png" alt="">
+                        <a href="" class="contatos-link icones-contatos"><img src="../mycollection/png/003-whatsapp.png"
+                                alt="">
                         </a>
                     </div>
+                </div>
+            </div>
+            <div class="col-12 mt-5"><a href="" class="contatos-link-2"><img src="../mycollection/png/002-facebook.png"
+                        alt="">
+                </a>
+                <a href="" class="contatos-link-2 icones-contatos"><img src="../mycollection/png/001-twitter.png"
+                        alt="">
+                </a>
+                <a href="" class="contatos-link-2 icones-contatos"><img src="../mycollection/png/004-instagram.png"
+                        alt="">
+                </a>
+                <a href="" class="contatos-link-2 icones-contatos"><img src="../mycollection/png/005-linkedin.png"
+                        alt="">
+                </a>
+                <a href="" class="contatos-link-2 icones-contatos"><img src="../mycollection/png/006-gmail.png" alt="">
+                </a>
+                <a href="" class="contatos-link-2 icones-contatos"><img src="../mycollection/png/003-whatsapp.png"
+                        alt="">
+                </a>
+            </div>
+        </div>
     </section>
 
     <!--Seção que mostra os feedbacks e solicita ao usuario um feedback-->
     <section id="secaoFeedbacks" class="text-center secao-feedbacks">
         <h1 class="mb-3">Feedbacks</h1>
         <p class="text-color mb-5">Veja o que alguns clientes falam da gente!</p>
-        <div class="container">
+        <div class="container ">
             <div class="row">
-                <div class="col-4 mb-5 text-color">
-                    <div class="text-center">
+                <div class="col-4 text-color container-feed ">
+                    <div class="text-xs-end">
                         <img height="150px" width="150px" src="../IMG/rostos-feedbacks/rosto-masc-1.avif"
                             class="rounded-circle mb-2" alt="Sheldon Cooper">
                         <div class="mb-3">
@@ -187,15 +216,15 @@
                             <i class="fas fa-star" style="color: #ffdd00;"></i>
                         </div>
                         <h2 class="mb-3">Sheldon Cooper</h2>
-                        <p class="mb-5 p-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, numquam
+                        <p class="p-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, numquam
                             pariatur
                             exercitationem nulla officiis ullam, dolores obcaecati accusamus in repellat, modi ex
                             nisi
                             consequuntur illum officia impedit suscipit explicabo ducimus? BAZINGA!</p>
                     </div>
                 </div>
-                <div class="col-4 mb-5 text-color">
-                    <div class="text-center">
+                <div class="col-4 text-color container-feed">
+                    <div class="text-xs-start">
                         <img height="150px" width="150px" src="../IMG/rostos-feedbacks/img-masc-2.jpg"
                             class="rounded-circle mb-2" alt="Leonard Hofstadter">
                         <div class="mb-3">
@@ -212,8 +241,8 @@
                             unde temporibus molestias recusandae repellendus illum possimus inventore?</p>
                     </div>
                 </div>
-                <div class="col-4 mb-5 text-color">
-                    <div class="text-center">
+                <div class="col-4 text-color container-feed">
+                    <div class="text-xs-end">
                         <img height="150px" width="150px" src="../IMG/rostos-feedbacks/rosto-fem-1.jpg"
                             class="rounded-circle mb-2" alt="Amy Farah Fowler">
                         <div class="mb-3">
@@ -231,7 +260,7 @@
                             vero quibusdam suscipit voluptatibus quasi.</p>
                     </div>
                 </div>
-                <h2 class="text-color mb-3">Nos envie o seu feedback:</h2>
+                <h2 class="text-color title-feedback mb-3">Nos envie o seu feedback:</h2>
                 <p class="text-color mb-3">Assim, podemos melhorar nossa infraestrutura para melhor lhes atender!</p>
                 <form id="formFeedback" action="" class="needs-validation" novalidate>
                     <div class="form-group col-12">
@@ -266,11 +295,6 @@
         </div>
     </section>
 
-    <!--Seção que mostra o calendario de eventos-->
-    <section id="secaoCalendario" class="text-center container secao-calendario">
-        <h1 id="calendarioEventos">Calendario de Eventos</h1>
-    </section>
-
     <!--Secão da reserva de eventos-->
     <section id="secaoReserva" class="text-center container secao-reserva">
         <div class="row">
@@ -296,82 +320,111 @@
             </div>
         </div>
 
-        <div class="servicos-extras">
+        <div class="servicos-extras mb-3">
             <span class="text-color">
                 Serviços Extras:
             </span>
         </div>
-        <div class="cards-itens">
-            <div class="text-center card-1">
-                <div class="card">
-                    <img src="../IMG/img-serviços/images (1).jfif" class="card-img-top imgs-card" alt="">
-                    <div class="card-body ml-0 mr-0">
-                        <h5 class="card-title">Segurança</h5>
-                        <p class="card-text">R$XX,XX</p>
-                        <a href="#" class="btn button-card">Adicionar</a>
+
+        <!-- Carrossel de Cards -->
+        <div class="container text-center mb-0">
+            <div id="carouselCardsReserva" class="carousel carousel-reserva slide col-md-6 mx-auto" data-ride="carousel">
+                <div class="carousel-inner carousel-inner-reserva">
+                    <div class="carousel-item carousel-item-reserva active">
+                        <div class="card-1 card-total">
+                            <div class="card">
+                                <img src="../IMG/img-serviços/images (1).jfif" class="card-img-top imgs-card" alt="">
+                                <div class="card-body ml-0 mr-0">
+                                    <h5 class="card-title">Segurança</h5>
+                                    <p class="card-text">R$XX,XX</p>
+                                    <a href="#" class="btn button-card">Adicionar</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="text-center card-2">
-                <div class="card">
-                    <img src="../IMG/img-serviços/images.jfif" class="card-img-top imgs-card" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Iluminação</h5>
-                        <p class="card-text">R$XX,XX</p>
-                        <a href="#" class="btn  button-card">Adicionar</a>
+                    <div class="carousel-item carousel-item-reserva">
+                        <div class="text-center card-2 card-total">
+                            <div class="card">
+                                <img src="../IMG/img-serviços/images.jfif" class="card-img-top imgs-card" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Iluminação</h5>
+                                    <p class="card-text">R$XX,XX</p>
+                                    <a href="#" class="btn  button-card">Adicionar</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="text-center card-3">
-                <div class="card">
-                    <img src="../IMG/img-serviços/decoração-de-mesa-de-aniversário-simples-com-balões-e-flores-pinterest-p-a0084.jpg"
-                        class="card-img-top imgs-card" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Decoração</h5>
-                        <p class="card-text">R$XX,XX</p>
-                        <a href="#" class="btn  button-card">Adicionar</a>
+                    <div class="carousel-item-reserva carousel-item">
+                        <div class="text-center card-3 card-total">
+                            <div class="card">
+                                <img src="../IMG/img-serviços/decoração-de-mesa-de-aniversário-simples-com-balões-e-flores-pinterest-p-a0084.jpg"
+                                    class="card-img-top imgs-card" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Decoração</h5>
+                                    <p class="card-text">R$XX,XX</p>
+                                    <a href="#" class="btn  button-card">Adicionar</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="text-center card-4">
-                <div class="card">
-                    <img src="../IMG/img-serviços/2.jpeg" class="card-img-top imgs-card" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Bebidas</h5>
-                        <p class="card-text">R$XX,XX</p>
-                        <a href="#" class="btn  button-card">Adicionar</a>
+                    <div class="carousel-item-reserva carousel-item">
+                        <div class="text-center card-4 card-total">
+                            <div class="card">
+                                <img src="../IMG/img-serviços/2.jpeg" class="card-img-top imgs-card" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Bebidas</h5>
+                                    <p class="card-text">R$XX,XX</p>
+                                    <a href="#" class="btn  button-card">Adicionar</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="text-center card-5">
-                <div class="card">
-                    <img src="../IMG/img-serviços/1-animacao-infantil.jpg" class="card-img-top imgs-card" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Animação</h5>
-                        <p class="card-text">R$XX,XX</p>
-                        <a href="#" class="btn  button-card">Adicionar</a>
+                    <div class="carousel-item-reserva carousel-item">
+                        <div class="text-center card-5 card-total">
+                            <div class="card">
+                                <img src="../IMG/img-serviços/1-animacao-infantil.jpg" class="card-img-top imgs-card"
+                                    alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Animação</h5>
+                                    <p class="card-text">R$XX,XX</p>
+                                    <a href="#" class="btn  button-card">Adicionar</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="text-center card-6">
-                <div class="card">
-                    <img src="../IMG/img-serviços/cropped-Ensaio.jpg" class="card-img-top imgs-card" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Musicos</h5>
-                        <p class="card-text">R$XX,XX</p>
-                        <a href="#" class="btn  button-card">Adicionar</a>
+                    <div class="carousel-item-reserva carousel-item">
+                        <div class="text-center card-6 card-total">
+                            <div class="card">
+                                <img src="../IMG/img-serviços/cropped-Ensaio.jpg" class="card-img-top imgs-card"
+                                    alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Musicos</h5>
+                                    <p class="card-text">R$XX,XX</p>
+                                    <a href="#" class="btn  button-card">Adicionar</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                    <!-- Adicione mais slides para cada card -->
                 </div>
+                <a class="carousel-control-prev" href="#carouselCardsReserva" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Anterior</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselCardsReserva" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Próximo</span>
+                </a>
             </div>
-        </div>
-        <div class="total-servicos-extras">
-            <div class="container totalizador">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="input-group mt-5 text-center col-12">
-                            <span class="input-group-text">Total:</span>
-                            <span class="input-group-text">R$0.00</span>
-                            <button class="btn btn-conc-reserva">Concluir Reserva</button>
+            <div class="total-servicos-extras mt-0">
+                <div class="container totalizador">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="input-group mt-sm-5 text-center col-12">
+                                <span class="input-group-text">Total:</span>
+                                <span class="input-group-text">R$0.00</span>
+                                <button class="btn btn-conc-reserva">Concluir</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -380,8 +433,8 @@
     </section>
 
     <!--Rodape-->
-    <footer id="rodape" class="secao-rodape">
-        <div class="container text-center mt-5">
+    <footer id="rodape" class="secao-rodape mt-0">
+        <div class="container text-center">
             <small>@2023 GRUPO TRÊS Software Work. Todos os direitos Reservados</small>
         </div>
 
